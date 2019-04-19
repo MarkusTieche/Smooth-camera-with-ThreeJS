@@ -46,7 +46,7 @@ function initPlayer()
 
     //CREATE GROUND
     var geometry = new THREE.PlaneGeometry( 50, 50, 1 );
-    var material = new THREE.MeshLambertMaterial( {color: 0xffffbb, side: THREE.DoubleSide,shininess:0} );
+    var material = new THREE.MeshLambertMaterial( {color: 0xffffbb, side: THREE.DoubleSide} );
     var plane = new THREE.Mesh( geometry, material );
         plane.rotation.x = Math.PI / 2;
     //ADD GROUND TO SCENE
