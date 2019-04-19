@@ -1,0 +1,28 @@
+html,body
+{
+    padding:0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#input
+{
+    position: absolute;
+    width:200px;
+    bottom:0px;
+    right: 20px;
+}
+
+#title
+{
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+    text-decoration: underline;
+}
+
+#title a
+{
+    color: grey;
+}
