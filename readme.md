@@ -2,7 +2,7 @@
 
 Simple character control with smooth follow camera.
 
-[button url="https://inkfood.github.io/Smooth-camera-with-ThreeJS/"]
+live preview "https://inkfood.github.io/Smooth-camera-with-ThreeJS/"
 
 Get threeJS https://threejs.org
 
