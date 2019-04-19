@@ -2,34 +2,6 @@ var inputController = function(){
     
     this.input = {x:0,y:0};
 
-    // document.getElementById("input").addEventListener("mousedown",function(event){
-    //     if(event.offsetY >= 100)
-    //     {
-
-    //         if(event.offsetX <= 70)
-    //         {
-    //             this.input.x = 1;
-    //             return;
-    //         }
-
-    //         if(event.offsetX <= 140)
-    //         {
-    //             this.input.y = -1;
-    //             return;
-    //         }
-
-    //         if(event.offsetX >= 140)
-    //         {
-    //             this.input.x = -1;
-    //             return;
-    //         }
-    //     }
-    //     else
-    //     {
-    //         this.input.y = 1;
-    //     }
-
-    // }.bind(this))
      document.getElementById("input").onmousedown = inputStart.bind(this)
      document.getElementById("input").ontouchstart = inputStart.bind(this)
      document.getElementById("input").onmouseup = inputEnd.bind(this)
@@ -37,23 +9,23 @@ var inputController = function(){
 
     function inputStart(event)
     {
-        console.log("lkjbc")
-        if(event.offsetY >= 100)
+        if(event.layerY >= 100)
         {
 
-            if(event.offsetX <= 70)
+            if(event.layerX  <= 70)
             {
+                
                 this.input.x = 1;
                 return;
             }
 
-            if(event.offsetX <= 140)
+            if(event.layerX <= 140)
             {
                 this.input.y = -1;
                 return;
             }
 
-            if(event.offsetX >= 140)
+            if(event.layerX >= 140)
             {
                 this.input.x = -1;
                 return;
